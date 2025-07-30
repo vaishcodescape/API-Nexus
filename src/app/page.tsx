@@ -1,8 +1,9 @@
-import {NavigationMenu} from "@/components/ui/navigation-menu"
+import { Navbar } from "@/components/Navbar"
+
 export default function Home() {
   return (
-    <div>
-      <NavigationMenu />
+    <div className="min-h-screen bg-white">
+      <Navbar />
     </div>
   );
 }

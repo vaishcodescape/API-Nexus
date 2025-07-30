@@ -14,7 +14,7 @@ const geistMono = Geist_Mono({
 
 export const metadata: Metadata = {
   title: "API-Nexus",
-  description: "Find your desiredA.I API using API-Nexus",
+  description: "Find your desired API using API-Nexus",
 };
 
 export default function RootLayout({
