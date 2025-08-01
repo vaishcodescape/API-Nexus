@@ -13,16 +13,15 @@ import {
 
 export function Navbar() {
   return (
-    <nav className="border-b bg-white/95 backdrop-blur supports-[backdrop-filter]:bg-white/60 animate-in slide-in-from-top-2 duration-500">
+    <nav className="border-b bg-white/95 backdrop-blur supports-[backdrop-filter]:bg-white/60">
       <div className="container mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex h-16 items-center justify-between">
 
-
           {/* Navigation Menu */}
-          <div className="hidden md:block animate-in fade-in-0 duration-700 delay-300">
+          <div className="hidden md:block">
             <NavigationMenu>
               <NavigationMenuList className="space-x-4">
-                <NavigationMenuItem className="animate-in slide-in-from-right-4 duration-500 delay-400">
+                <NavigationMenuItem>
                   <NavigationMenuTrigger className="bg-black text-white hover:bg-gray-800 hover:text-white focus:bg-gray-800 focus:text-white px-4 py-2 rounded-md transition-all duration-300 hover:scale-105 hover:shadow-lg">
                     Getting started
                   </NavigationMenuTrigger>
@@ -85,12 +84,12 @@ export function Navbar() {
                     </ul>
                   </NavigationMenuContent>
                 </NavigationMenuItem>
-                <NavigationMenuItem className="animate-in slide-in-from-right-4 duration-500 delay-500">
+                <NavigationMenuItem>
                   <Button asChild variant="default" className="bg-black text-white hover:bg-gray-800 hover:text-white transition-all duration-300 hover:scale-105 hover:shadow-lg">
                     <Link href="/dashboard">Dashboard</Link>
                   </Button>
                 </NavigationMenuItem>
-                <NavigationMenuItem className="animate-in slide-in-from-right-4 duration-500 delay-600">
+                <NavigationMenuItem>
                   <Button asChild variant="default" className="bg-black text-white hover:bg-gray-800 hover:text-white transition-all duration-300 hover:scale-105 hover:shadow-lg">
                     <Link href="/pricing">Explore</Link>
                   </Button>
@@ -101,14 +100,14 @@ export function Navbar() {
 
           {/* Right side - Sign In Button */}
           <div className="flex items-center space-x-4">
-            <div className="hidden md:block animate-in fade-in-0 duration-700 delay-700">
+            <div className="hidden md:block">
               <Button variant="outline" className="border-black text-black hover:bg-black hover:text-white transition-all duration-300 hover:scale-105">
                 Sign In
               </Button>
             </div>
             
             {/* Mobile menu button */}
-            <div className="md:hidden animate-in fade-in-0 duration-700 delay-400">
+            <div className="md:hidden">
               <Button variant="outline" size="sm" className="border-black text-black hover:bg-black hover:text-white transition-all duration-300 hover:scale-105">
                 Menu
               </Button>
@@ -118,4 +117,4 @@ export function Navbar() {
       </div>
     </nav>
   )
-} 
+}
